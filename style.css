@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+  }
+
 .small-text {
     font-size: small;
     top: 0;
@@ -6,11 +10,12 @@
 
 .photo {
     width: 80%;
-    height: 70%;
+    height: 60%;
   	align-items:center;
-    margin-top: 20px;
+    margin-top: 4%;
     padding-top: 5px;
     margin-left: 10%;
+  	margin-right:10%;
   	padding-left:5px;
     padding-bottom: 2px;
     border-radius: 20px;
@@ -56,7 +61,7 @@
     background-image: url('https://iili.io/Ju0ONxs.md.jpg');
     background-size: 100% 100%;
     border-radius: 20px;
-    padding: 30vh;
+    padding: 30vw;
     align-items: center;
 }
 
@@ -84,7 +89,7 @@
     background-image: url('https://iili.io/JAJKFI9.md.jpg');
     background-size: 100% 100%;
     border-radius: 20px;
-    padding: 30vh;
+    padding: 30vw;
     align-items: center;
 }
 
@@ -111,7 +116,7 @@
     background-image: url('https://iili.io/JAJfCZX.md.jpg');
     background-size: 100% 100%;
     border-radius: 20px;
-    padding: 30vh;
+    padding: 30vw;
     align-items: center;
 }
 
@@ -138,7 +143,7 @@
     background-image: url('https://iili.io/JAcwB94.md.jpg');
     background-size: 100% 100%;
     border-radius: 20px;
-    padding: 30vh;
+    padding: 30vw;
     align-items: center;
 }
 
@@ -170,6 +175,17 @@
     animation: colorFlowAnimation 5s infinite
 }
 
+@media only screen and (max-width: 600px) {
+  .Intropara,
+  .Inceppara,
+  .glorypara,
+  .honorspara,
+  .lastline,
+  .salute {
+    font-size: calc(24px - var(--font-reduction-percentage)); /* Adjusted font size for small screens */
+  }
+}
+
 @keyframes animate {
     0% {
         opacity: 0.0;
@@ -188,4 +204,4 @@
     100% {
         background-position: 0% -200%;
     }
-}   
+}
